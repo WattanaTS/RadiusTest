@@ -30,7 +30,7 @@
     <div style="padding: 20px;">
       <a-col class="">
         <a-col>
-          <a-row class="dialogContent">
+          <a-row class="dialogContent bg-color">
             {{ dataItem.name }}
           </a-row>
           <a-row class="dialogContent" style="font-size: 14px;">
@@ -39,7 +39,7 @@
         </a-col>
         <a-col>
           <a-row
-            class="dialogContent"
+            class="dialogContent bg-color"
             style="font-size: 18px; font-weight: bold;"
           >
             Rocket
@@ -53,7 +53,7 @@
         </a-col>
         <a-col>
           <a-row
-            class="dialogContent"
+            class="dialogContent bg-color"
             style="font-size: 18px; font-weight: bold;"
           >
             Launchpad
@@ -103,6 +103,11 @@ export default defineComponent({
 </script>
 
 <style>
+.bg-color {
+  background-color: blueviolet;
+  border-radius: 3px;
+  color: aliceblue;
+}
 .box {
   border-style: solid;
 }
